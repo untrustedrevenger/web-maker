@@ -75,6 +75,35 @@ go run main.go
 
 ---
 
+## Quick Start with Python CLI
+
+A lightweight Python CLI called **webmaker.py** is included to help you scaffold projects instantly.
+
+### List Available Templates
+
+```bash
+python webmaker.py list
+```
+
+### Create a New Project
+
+```bash
+python webmaker.py new <template> <project-name>
+# example:
+python webmaker.py new basic my-website
+```
+
+The command above copies everything from `templates/basic` into the `my-website/` folder and automatically replaces `{{project_name}}` placeholders.
+
+Current built-in templates:
+
+- `basic` – Plain HTML/CSS/JS starter.
+- `flask` – Minimal Python Flask application.
+
+> More templates (React, PHP, Go, etc.) will be added soon. Feel free to contribute your own in the `templates/` directory!
+
+---
+
 ## Supported Languages & Frameworks
 
 - **Python** (Flask, Django, etc.)
